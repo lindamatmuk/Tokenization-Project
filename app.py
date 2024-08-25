@@ -7,7 +7,7 @@ app = Flask(__name__)
 ganache_url = "http://127.0.0.1:7545"
 web3 = Web3(Web3.HTTPProvider(ganache_url))
 
-contract_address = "ContractAddress-to-replace-later"  #what to put here??
+contract_address = "ContractAddress-to-replace-later"
 with open("compiled_code.json", "r") as file:
     compiled_sol = json.load(file)
 abi = compiled_sol['contracts']['Tokenize.sol']['Tokenize']['abi']
