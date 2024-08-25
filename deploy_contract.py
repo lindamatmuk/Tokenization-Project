@@ -16,7 +16,7 @@ Tokenize = web3.eth.contract(abi=abi, bytecode=bytecode)
 ##nonce = web3.eth._get_transaction_count(address)
 
 
-deployer_account = web3.eth.accounts[0] #first(?) account on ganache
+deployer_account = web3.eth.accounts[0] #first account on ganache
 
 #deploy contract
 txHash = Tokenize.constructor().transact({'from': deployer_account}) #identifier
